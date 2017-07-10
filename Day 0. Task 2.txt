@@ -10,10 +10,3 @@
 y <- c(1,2,3,4,5)
 w <- c(10,40,30,50,20)
 cat(weighted.mean(w,y))
-
-
-//Python:
-n = int(input())
-nums = [int(x) for x in input().split()]
-weight = [int(x) for x in input().split()]
-print (round(1.0*sum([nums[i]*weight[i] for i in range(n)])/sum(weight), 1))
