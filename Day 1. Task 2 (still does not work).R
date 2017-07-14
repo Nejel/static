@@ -1,4 +1,27 @@
-//R solution
+#final R solution
+
+
+dataset <- file("stdin")
+open(dataset)
+q <- strsplit(readLines(dataset, warn=FALSE), split=" ")
+a <- as.numeric(q[[2]])
+b <- as.numeric(q[[3]])
+close(dataset)
+M <- matrix(c(a, b), ncol = 2, byrow = FALSE)
+N <- M[sort.list(M[,1]), ]
+V <- rep((as.numeric(N[,1])), (as.numeric(N[,2])))
+numered <- length(V)
+lowerEndIndex <- floor(numered / 2)
+upperStartIndex <- ceiling(numered / 2) + 1
+lowerHalf <- V[1 : lowerEndIndex]
+upperHalf <- V[upperStartIndex : numered]
+q1 <- as.numeric(median(lowerHalf))
+q3 <- as.numeric(median(upperHalf))
+cat(format(round(c(q3-q1),1),nsmall=1))
+
+
+
+#Almost work decision
 
 dataset <- file("stdin")
 open(dataset)
@@ -16,16 +39,7 @@ lowerHalf <- V[1 : lowerEndIndex]
 upperHalf <- V[upperStartIndex : numered]
 q1 <- as.numeric(median(lowerHalf))
 q3 <- as.numeric(median(upperHalf))
-{
-r <- as.numeric(q3-q1)
-if(r>1)
-{
-r <- r + 0.0001
-}
-r <- c(r)
-}
-mid=length(r) %/% 2
-cat(format(round(tail(r,mid)),1),nsmall=1)
+cat(format(round(c(q3-q1),1),nsmall=1))
 
 
 Another solution:
