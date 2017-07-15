@@ -1,0 +1,19 @@
+In this challenge, we practice calculating the probability of a compound event. We recommend you review today's Probability Tutorial before attempting this challenge.
+
+Task
+There are 2 urns labeled X, Y, and Z.
+
+Urn X contains 4 red balls and 3 black balls.
+Urn Y contains 5 red balls and 4 black balls.
+Urn Z contains 4 red balls and 4 black balls.
+
+One ball is drawn from each of the  urns. What is the probability that, of the  balls drawn,  are red and  is black?
+
+How to:
+http://www.matburo.ru/tvart_sub.php?p=art_strelok#2
+P1=P(X1)=
+=p1⋅q2⋅q3+q1⋅p2⋅q3+q1⋅q2⋅p3.
+p1, p2, p3 -- probability of red ball in urns 1,2,3.
+q1, q2, q3 -- probability of black ball in urns 1,2,3.
+
+Answer: 0.46
