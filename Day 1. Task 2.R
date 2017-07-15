@@ -21,7 +21,7 @@ cat(format(round(c(q3-q1),1),nsmall=1))
 
 
 
-#Almost work decision
+#Almost work solution
 
 dataset <- file("stdin")
 open(dataset)
