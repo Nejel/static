@@ -1,14 +1,13 @@
 #My R solution
 
 #Input
-#a[1] = 2.5
-#a[2] = 5
 
-a <- readLines(con <- file("stdin"), warn = FALSE)
-a <- strsplit(a," ")
-a <- as.numeric(a)
-b <- dpois(a[2], lambda=a[1])
-cat(format(round(c(b),3),nsmall=3), sep = "\n")
+a <- 0.88
+b <- 1.55
+costmachineA <- 160 + 40 * (b+b^2)
+costmachineB <- 128 + 40 * (g+g^2)
+cat(format(round(c(costmachineA, costmachineB),3),nsmall=3), sep = "\n")
 
 #Result:
-0.067
+#226.176
+#286.100
