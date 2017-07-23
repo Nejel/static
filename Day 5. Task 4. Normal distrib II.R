@@ -1,7 +1,7 @@
 #The Normal Distribution
 
 #Task
-#http://www.r-tutor.com/elementary-statistics/probability-distributions/normal-distribution
+#https://www.hackerrank.com/challenges/s10-the-central-limit-theorem-1?h_r=next-challenge&h_v=zen
 
 #Density, distribution function, quantile function and random generation for the normal distribution with mean equal to mean and standard deviation equal to sd.
 #Usage

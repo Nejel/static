@@ -1,4 +1,5 @@
 #The Normal Distribution
+#Normal Distribution I
 
 #Task
 #In a certain plant, the time taken to assemble a car is a random variable, X , having a normal distribution with a mean of 20 hours and a standard deviation of 2 hours. What is the probability that a car can be assembled at this plant in:
@@ -13,7 +14,6 @@
 #pnorm(q, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)
 #qnorm(p, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)
 #rnorm(n, mean = 0, sd = 1)
-
 
 #My R solution
 
