@@ -14,11 +14,12 @@
 
 #My R solution
 
-a <- pnorm(80, mean=70, sd=10, lower.tail=FALSE)
-b <- pnorm(60, mean=70, sd=10, lower.tail=FALSE)
-c <- pnorm(59, mean=70, sd=10, lower.tail=FALSE)
+a <- 100*(1-pnorm(80, mean=70, sd=10))
+b <- 100*(1-pnorm(60, mean=70, sd=10))
+c <- 100*(pnorm(60, mean=70, sd=10))
 cat(format(round(c(a, b, c),2),nsmall=2), sep = "\n")
 
 #Result:
-#0.401
-#0.341
+#15.87
+#84.13
+#15.87
